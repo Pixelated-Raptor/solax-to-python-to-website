@@ -1,0 +1,2 @@
+Convert given into localtime:
+	datetime(time_of_request, 'localtime')
