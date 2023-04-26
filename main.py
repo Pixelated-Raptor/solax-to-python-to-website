@@ -53,7 +53,7 @@ data_dict = {
 
 #==========CONNECT-DATABASE==
 
-con = sqlite3.connect("solar_data.db")
+con = sqlite3.connect("/home/kiwi/project/solar_data.db")
 cur = con.cursor()
 
 #==========INSERT-DATA=======
