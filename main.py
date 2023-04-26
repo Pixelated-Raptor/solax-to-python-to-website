@@ -4,10 +4,10 @@ import json, sqlite3, urllib.request
 
 #data_raw = open("input_test.json", "r")
 
-with open("serial.txt", "r") as serial_text:
+with open("/home/kiwi/project/serial.txt", "r") as serial_text:
     serial = serial_text.read()
 
-with open("token.txt", "r") as token_text:
+with open("/home/kiwi/project/token.txt", "r") as token_text:
     token = token_text.read()
 
 #Need to remove stray \n from file
