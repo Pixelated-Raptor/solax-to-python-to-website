@@ -6,7 +6,7 @@ sql =   """select
                 round(avg(acpower)) as ac,
                 round(yieldtoday) as yieldtoday,
                 round(consumeenergy, 1) as consume,
-                batPower
+                feedinenergy 
             from
                 DOWNLOADED_SOLAX_INFO
             where
@@ -39,8 +39,8 @@ plt.grid(linestyle = '--', linewidth = 0.5)
 
 # Battery Power
 plt.subplot(2, 2, 4)
-plt.plot(data.batPower, label = "Battery Power")
-plt.title("Batterieleistung [W]")
+plt.plot(data.feedinenergy, label = "Feedin Energy")
+plt.title("Einspeisung [kWh]")
 plt.xlabel("Uhrzeit")
 plt.grid(linestyle = '--', linewidth = 0.5)
 
