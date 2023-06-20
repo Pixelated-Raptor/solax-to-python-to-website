@@ -10,7 +10,7 @@ with open("/home/kiwi/project/serial.txt", "r") as serial_text:
 with open("/home/kiwi/project/token.txt", "r") as token_text:
     token = token_text.read()
 
-#Need to remove stray \n from file
+#Needed to remove stray \n from file
 token = token.strip()
 
 data_raw = urllib.request.urlopen("https://www.solaxcloud.com/proxyApp/proxy/api/getRealtimeInfo.do?tokenId=%s&sn=%s" % (token, serial)).read() 
